@@ -28,7 +28,7 @@ jobs:
 
       - run:
           name: build dependencies
-          command: bundle install
+          command: bundle exec htmlproofer ./_site --check-html
 
       - run:
           name: build the jekyll site
